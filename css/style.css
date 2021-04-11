@@ -1,0 +1,343 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic";
+}
+
+body {
+    background-color: #f1f4eb;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.skip a {
+    background: rgb(150, 150, 150);
+    left: 0;    
+    padding: 7px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top:  -40px;
+}
+
+.skip a:focus {
+    display: inline-block;
+    top: 30px;
+}
+
+*a:focus {
+    border-top: 10px dashed;
+    border-bottom: 10px dashed;
+}
+
+.home-h1, .about-h1, .menu-h1, .gallery-h1, .contact-h1  {
+    color: #000000;
+    background-color: #bdbdbd;
+    padding: 2px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.our-story{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 26px;
+    background-color: #aabcf5;
+}
+
+.home-p1 {
+    margin: 50px;
+    font-size: 22px;
+}
+
+.about-p1 {
+    margin: 50px;
+    font-size: 18px;
+}
+
+.title {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home-img {
+    background-image: url('../images/cafe.jpg');
+    min-height: 85vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #eeeeec;
+    background-repeat: no-repeat;
+}
+
+.about-img {
+    background-image: url('../images/espresso.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-color: #eeeeec;
+    background-repeat: no-repeat;
+}
+
+.menu-img {
+    background-image: url('../images/pasteries.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-color: #eeeeec;
+    background-repeat: no-repeat;
+}
+
+.gallery-img {
+    background-image: url('../images/barista.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-color: #eeeeec;
+    background-repeat: no-repeat;
+}
+
+
+.contact-img {
+    background-image: url('../images/latte.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-color: #eeeeec;
+    background-repeat: no-repeat;
+}
+
+/* body img{
+    opacity: 1;
+    width: 200px;
+    height: 40px;
+} */
+
+ul {
+    list-style-type: none;
+    text-align: right;
+    margin-top: 25px;  
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+nav li {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 20px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    transition: 0.6s ease;
+}
+
+a:hover {
+    background-color: #7690e4;
+    color: #000000;
+    border-color: #000000;
+}
+
+.active {
+    background-color: #5a75ce;
+    border-color: #000000;
+    border-width: 4px;
+    font-weight: 900;
+}
+
+.imgs-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.imgs-gallery img {
+    width: 100%;
+}
+
+.food-header {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
+
+.drinks {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 26px;
+    background-color: #aabcf5;
+}
+
+.smoothies {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.teas {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.coffees {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.bakery {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 26px;
+    background-color: #aabcf5;
+}
+
+.breakfast {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cake {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pastries {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bowls {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 26px;
+    background-color: #aabcf5;
+}
+
+.acai-bowls {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.all-bowls {
+    margin-bottom: 80px;
+}
+
+.protein-bowls {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.hours {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+
+.filler-form {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #d0dffa;
+    padding: 60px;
+    position: relative;
+}
+
+@media all and (min-width: 768px) {
+    .home-h1 {
+        font-size: 34px;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #000000;
+        padding: 30px 50px;
+        border: 0.5px solid #000000;
+        background-color: #ffffff;
+        transition: 0.6s ease;
+    }
+
+    nav li {
+        margin-top: 16px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .imgs-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 5px;
+        width: 100%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .footer {
+        font-size: 24px;
+    }
+}
+
+@media all and (min-width: 1155px) {
+
+
+}
+
+/* Add preferred reduce motion */
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+  
+    .skip a{
+      -webkit-transition: none; /* sets to default setting */
+      transition: none;        /* sets to default setting */
+     }
+  
+    /*Turn off parallax*/
+    header{
+      background-attachment: initial;
+    }
+}
